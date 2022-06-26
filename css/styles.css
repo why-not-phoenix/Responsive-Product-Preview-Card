@@ -1,0 +1,178 @@
+
+/* GENERAL STYLE */
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #6b7189; /* fallback */
+  color: hsl(228, 12%, 48%);
+  background-color: #f2eae2; /* fallback */
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  padding: 3.533rem 2.025rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: #ffffff; /* fallback */
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* PRODUCT CARD STYLE */
+/* Product Image */
+
+.image-container {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Product Information */
+
+.product-info {
+  padding: 1.1rem 2.4rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.product-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-family: 'Fraunces', serif;
+  font-size: 2.95rem;
+  line-height: 1;
+  color: #1c232b;
+  color: hsl(212, 21%, 14%);
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+
+.new-price {
+  font-family: 'Fraunces', serif;
+  font-size: 3.25rem;
+  color: #3c8067; /* fallback */
+  color: hsl(158, 36%, 37%);
+  margin-right: 3rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.purchase-button {
+  color: #ffffff; /* fallback */
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #3c8067; /* fallback */
+  background-color: hsl(158, 36%, 37%);
+  word-spacing: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.purchase-button:hover {
+  background-color: #306652;
+}
+
+.purchase-button:hover ~ .product-paragraph {
+  font-size: 1.2rem;
+}
+
+.purchase-button img {
+  margin-right: 1rem;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3d51a2; /* fallback */
+  color: hsl(228, 45%, 44%);
+}
+
+/* For Width 480px and Above */
+
+@media screen and (min-width: 480px) {
+
+  body {
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    height: 45.8rem;
+    width: 61.44rem;
+  }
+
+  .image-container {
+    height: 100%;
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .image-container img {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .product-info {
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem 5rem 2.5rem 2.9rem;
+    margin: 0;
+  }
+
+  .product-name {
+    margin: 1.2rem 0 1rem;
+  }
+
+  .product-price {
+    margin: 2rem 0;
+  }
+}
+
+/* End of Code🙏 */
